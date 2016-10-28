@@ -21,6 +21,9 @@
   <ItemGroup>
     <ClCompile Include="test.cpp" />
   </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="cleanup.h" />
+  </ItemGroup>
   <PropertyGroup Label="Globals">
     <ProjectGuid>{C65D9154-401B-48E0-A598-97B2355DEEE1}</ProjectGuid>
     <RootNamespace>SDL_Tutorial</RootNamespace>

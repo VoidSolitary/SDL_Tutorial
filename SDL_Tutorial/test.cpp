@@ -1,5 +1,6 @@
 #include <iostream>
 #include <SDL.h>
+#include "cleanup.h"
 
 int main(int, char**) {
 	if (SDL_Init(SDL_INIT_VIDEO) != 0) {
@@ -55,9 +56,7 @@ int main(int, char**) {
 		SDL_Delay(1000);
 	}
 
-	SDL_DestroyTexture(tex);
-	SDL_DestroyRenderer(ren);
-	SDL_DestroyWindow(win);
+	cleanup(tex, ren, win);
 	SDL_Quit();
 	return 0;
 }
